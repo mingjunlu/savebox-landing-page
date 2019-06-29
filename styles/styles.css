@@ -7,24 +7,6 @@ body {
     font-family: "Helvetica Neue", Helvetica, "PingFang TC", "STHeitiTC", "Microsoft JhengHei", Arial, sans-serif;
 }
 
-.up-arrow-wrapper {
-    position: fixed;
-    right: 1.2rem;
-    bottom: 1.2rem;
-    background-color: rgba(74, 129, 229, 0.6);
-    width: 46px;
-    height: 46px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-}
-
-.up-arrow {
-    color: white;
-    font-size: 3.2rem;
-}
-
 .section {
     padding: 3.2rem 2.0rem;
 }
@@ -45,7 +27,7 @@ body {
     margin-bottom: 3.2rem;
 }
 
-.logo {
+.front-page__logo {
     color: white;
     display: flex;
     justify-content: center;
@@ -53,64 +35,59 @@ body {
     line-height: 4.0;
 }
 
-.logo__icon {
+.front-page__logo-icon {
     display: none;
     max-width: 2.2rem;
     margin-right: 0.8rem;
 }
 
-.logo__text {
+.front-page__logo-text {
     font-size: 2.4rem;
     font-family: "Comfortaa";
     text-transform: lowercase;
 }
 
-.slogans {
+.front-page__slogans {
     color: white;
     text-align: center;
 }
 
-.slogans__slogan {
+.front-page__slogan {
     font-size: 2.8rem;
     margin-bottom: 0.8rem;
 }
 
-.slogans__subslogan {
+.front-page__subslogan {
     font-size: 1.8rem;
     font-weight: 300;
 }
 
-.button {
+.front-page__input {
     display: block;
     width: 100%;
-    color: white;
-    text-align: center;
-    padding: 1.4rem 0;
-    border-radius: 5px;
-    background-color: rgb(64, 69, 99);
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-}
-
-.input {
-    color: initial;
-    background-color: white;
     padding: 1.4rem 0.8rem;
-    outline: none;
-    border: none;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
     margin-bottom: 1.2rem;
     box-shadow: 0 0 0 1px rgb(196, 205, 213);
 }
 
-.apple-icon {
-    font-size: 1.8rem;
-    margin-right: 0.2rem;
+.front-page__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.4rem 0;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(64, 69, 99);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-.submit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.4rem;
+.front-page__icon {
+    font-size: 1.8rem;
+    margin-right: 0.2rem;
 }
 
 .front-page__no-email-wrapper {
@@ -126,7 +103,7 @@ body {
     text-decoration: underline;
 }
 
-.front-page__homescreen {
+.front-page__image-wrapper {
     text-align: center;
     height: 24rem;
     overflow: hidden;
@@ -138,7 +115,7 @@ body {
 
 /* 第二頁 */
 
-.pros__advantage {
+.advantage {
     padding: 1.6rem 3.2rem;
     text-align: center;
     margin-bottom: 2.0rem;
@@ -164,12 +141,12 @@ body {
     line-height: 1.7;
 }
 
-.pros__advantage:hover {
+.advantage:hover {
     box-shadow: 0px 20px 40px rgb(221, 231, 238);
 }
 
-.pros__advantage:hover > .advantage__icon,
-.pros__advantage:hover > .advantage__title {
+.advantage:hover > .advantage__icon,
+.advantage:hover > .advantage__title {
     color: rgb(28, 128, 223);
 }
 
@@ -299,15 +276,14 @@ body {
 /* 第六頁 */
 
 .feedback__heading {
-    font-weight: 300;
-    font-size: 2.4rem;
+    color: rgb(28, 128, 223);
+    font-size: 2.0rem;
     line-height: 3.6;
     text-align: center;
 }
 
 .feedback__post {
-    padding: 1.6rem 3.2rem;
-    margin-bottom: 2.0rem;
+    padding: 2.0rem 3.2rem 2.6rem 3.2rem;
     border-radius: 20px;
 }
 
@@ -316,10 +292,10 @@ body {
 }
 
 .feedback__open-quote {
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     color: rgb(108, 108, 108);
     position: relative;
-    left: -1.6rem;
+    left: -0.9rem;
     transform: scale(-1, -1); /* 水平垂直翻轉 */
 }
 
@@ -337,9 +313,9 @@ body {
 
 .feedback__end-quote {
     color: rgb(108, 108, 108);
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     position: relative;
-    right: -1.6rem;
+    right: -0.9rem;
 }
 
 .feedback__user {
@@ -403,4 +379,34 @@ body {
 
 .contact__textarea::placeholder {
     text-indent: -0.2rem;
+}
+
+.contact__submit {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1.4rem 0;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(64, 69, 99);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+.up-arrow-wrapper {
+    position: fixed;
+    right: 1.2rem;
+    bottom: 1.2rem;
+    background-color: rgba(74, 129, 229, 0.6);
+    width: 46px;
+    height: 46px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.up-arrow {
+    color: white;
+    font-size: 3.2rem;
 }

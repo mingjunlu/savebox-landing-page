@@ -13,42 +13,42 @@
 <body>
     <main>
         <section id="top" class="section front-page">
-            <div class="logo">
-                <img src="images/logo.svg" alt="logo" class="logo__icon">
-                <h1 class="logo__text">Savebox</h1>
+            <div class="front-page__logo">
+                <img src="images/logo.svg" alt="logo" class="front-page__logo-icon">
+                <h1 class="front-page__logo-text">Savebox</h1>
             </div>
             <div class="front-page__headings">
-                <div class="slogans">
-                    <h2 class="slogans__slogan">省小錢，發大財</h2>
-                    <p class="slogans__subslogan">記帳也可以很簡單</p>
+                <div class="front-page__slogans">
+                    <h2 class="front-page__slogan">省小錢，發大財</h2>
+                    <p class="front-page__subslogan">記帳也可以很簡單</p>
                 </div>
             </div>
             <form name="beta-testers" method="POST" data-netlify="true">
-                <input name="tester-email" type="email" class="button input" placeholder="輸入 email" required>
-                <button class="button submit">
-                    <ion-icon name="logo-apple" class="apple-icon"></ion-icon>
+                <input name="tester-email" type="email" class="front-page__input" placeholder="輸入 email" required>
+                <button type="submit" class="front-page__submit">
+                    <ion-icon name="logo-apple" class="front-page__icon"></ion-icon>
                     <span>搶先體驗</span>
                 </button>
                 <div class="front-page__no-email-wrapper">
                     <a href="https://testflight.apple.com/join/5CB6znKy" class="front-page__no-email">不想留 email？沒問題</a>
                 </div>
             </form>
-            <figure class="front-page__homescreen">
+            <figure class="front-page__image-wrapper">
                 <img src="images/homescreen.png" alt="紀錄一覽" class="homescreen__image">
             </figure>
         </section>
-        <section class="section pros">
-            <article class="pros__advantage">
+        <section class="section">
+            <article class="advantage">
                 <ion-icon name="ios-gift" class="advantage__icon"></ion-icon>
                 <h4 class="advantage__title">免費</h4>
                 <p class="advantage__content">要先花錢買 app 才能省錢？別鬧了！先省錢，再決定怎麼花錢。</p>
             </article>
-            <article class="pros__advantage">
+            <article class="advantage">
                 <ion-icon name="ios-checkmark-circle" class="advantage__icon"></ion-icon>
                 <h4 class="advantage__title">簡單易用</h4>
                 <p class="advantage__content">按按鈕、輸入金額，完成。懶得打字？電子發票掃起來！</p>
             </article>
-            <article class="pros__advantage">
+            <article class="advantage">
                 <ion-icon name="logo-apple" class="advantage__icon"></ion-icon>
                 <h4 class="advantage__title">為 iPhone 量身打造</h4>
                 <p class="advantage__content">遵從蘋果制定的《使用者介面規範》，操作上跟 iOS 內建的 app 一樣直覺。</p>
@@ -135,7 +135,7 @@
                     <input name="contact-email" type="email" class="contact__input" placeholder="Email" required>
                     <textarea name="contact-feedback" class="contact__textarea" placeholder="意見反映" required></textarea>
                 </div>
-                <button class="button">送出</button>
+                <button type="submit" class="contact__submit">送出</button>
             </form>
         </section>
     </main>
