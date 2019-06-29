@@ -5,12 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Savebox - 記帳也可以很簡單</title>
-    <link rel="stylesheet" href="https://unpkg.com/normalize.css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
     <link rel="stylesheet" href="styles/custom-reset.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <h1>Savebox</h1>
+    <main>
+        <section id="top" class="section front-page">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo" class="logo__icon">
+                <h1 class="logo__text">Savebox</h1>
+            </div>
+            <div class="front-page__headings">
+                <div class="slogans">
+                    <h2 class="slogans__slogan">省小錢，發大財</h2>
+                    <p class="slogans__subslogan">記帳也可以很簡單</p>
+                </div>
+            </div>
+            <form name="beta-testers" method="POST" data-netlify="true">
+                <input name="tester-email" type="email" class="button input" placeholder="輸入 email" required>
+                <button class="button submit">
+                    <ion-icon name="logo-apple" class="apple-icon"></ion-icon>
+                    <span>搶先體驗</span>
+                </button>
+                <div class="front-page__no-email-wrapper">
+                    <a href="https://testflight.apple.com/join/5CB6znKy" class="front-page__no-email">不想留 email？沒問題</a>
+                </div>
+            </form>
+            <figure class="front-page__homescreen">
+                <img src="images/homescreen.png" alt="紀錄一覽" class="homescreen__image">
+            </figure>
+        </section>
+        <section class="section pros">
+            <article class="pros__advantage">
+                <ion-icon name="ios-gift" class="advantage__icon"></ion-icon>
+                <h4 class="advantage__title">免費</h4>
+                <p class="advantage__content">要先花錢買 app 才能省錢？別鬧了！先省錢，再決定怎麼花錢。</p>
+            </article>
+            <article class="pros__advantage">
+                <ion-icon name="ios-checkmark-circle" class="advantage__icon"></ion-icon>
+                <h4 class="advantage__title">簡單易用</h4>
+                <p class="advantage__content">按按鈕、輸入金額，完成。懶得打字？電子發票掃起來！</p>
+            </article>
+            <article class="pros__advantage">
+                <ion-icon name="logo-apple" class="advantage__icon"></ion-icon>
+                <h4 class="advantage__title">為 iPhone 量身打造</h4>
+                <p class="advantage__content">遵從蘋果制定的《使用者介面規範》，操作上跟 iOS 內建的 app 一樣直覺。</p>
+            </article>
+        </section>
+        <section class="section stats">
+            <article>
+                <figure class="stats__image-wrapper">
+                    <img src="images/stats.png" alt="統計頁面" class="stats__image">
+                </figure>
+                <div class="stats__container">
+                    <div class="stats__icon-wrapper">
+                        <ion-icon name="ios-stats" class="stats__icon"></ion-icon>
+                    </div>
+                    <div class="stats__text">
+                        <h4 class="stats__title">檢視金錢流向</h4>
+                        <p class="stats__content">統計資料將收支分門別類，按照金額高低排序。錢花到哪裡？一目了然。</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="section qr-scanning">
+            <article>
+                <figure class="qr-scanning__image-wrapper">
+                    <img src="images/qr-code.png" alt="電子發票" class="qr-scanning__image">
+                </figure>
+                <div class="qr-scanning__icon-wrapper">
+                    <ion-icon name="ios-qr-scanner"></ion-icon>
+                </div>
+                <h4 class="qr-scanning__title">掃描電子發票</h4>
+                <p class="qr-scanning__content">掃描電子發票左下方的 QR 碼，系統就會自動填入金額、日期等資訊。</p>
+            </article>
+        </section>
+        <section class="section suggestion">
+            <article>
+                <figure class="suggestion__image-wrapper">
+                    <img src="images/chat.png" alt="電子發票" class="suggestion__image">
+                </figure>
+                <div class="suggestion__icon-wrapper">
+                    <ion-icon name="ios-chatbubbles" class="suggestion__icon"></ion-icon>
+                </div>
+                <h4 class="suggestion__title">提供意見</h4>
+                <p class="suggestion__content">覺得缺少什麼功能、用起來不順手，還是發現 bug 了嗎？歡迎隨時反映問題！</p>
+            </article>
+        </section>
+        <section class="section feedback">
+            <h3 class="feedback__heading">聽聽他們怎麼說</h3>
+            <article class="feedback__post">
+                <div class="feedback__open-quote-wrapper">
+                    <ion-icon name="md-quote" class="feedback__open-quote"></ion-icon>
+                </div>
+                <p class="feedback__content">讓你簡單完成一件事的人性化 app。</p>
+                <div class="feedback__end-quote-wrapper">
+                    <ion-icon name="md-quote" class="feedback__end-quote"></ion-icon>
+                </div>
+                <p class="feedback__user">桃園陳先生</p>
+            </article>
+            <article class="feedback__post">
+                <div class="feedback__open-quote-wrapper">
+                    <ion-icon name="md-quote" class="feedback__open-quote"></ion-icon>
+                </div>
+                <p class="feedback__content">小懶蟲快速記帳必備。文青記帳超給力助手。</p>
+                <div class="feedback__end-quote-wrapper">
+                    <ion-icon name="md-quote" class="feedback__end-quote"></ion-icon>
+                </div>
+                <p class="feedback__user">新北潘小姐</p>
+            </article>
+            <article class="feedback__post">
+                <div class="feedback__open-quote-wrapper">
+                    <ion-icon name="md-quote" class="feedback__open-quote"></ion-icon>
+                </div>
+                <p class="feedback__content">每天用 Savebox 記帳五分鐘，讓你通達財富自由。</p>
+                <div class="feedback__end-quote-wrapper">
+                    <ion-icon name="md-quote" class="feedback__end-quote"></ion-icon>
+                </div>
+                <p class="feedback__user">澳洲劉小姐</p>
+            </article>
+        </section>
+        <section class="section contact">
+            <h3 class="contact__heading">聯繫開發者</h3>
+            <form name="contacts" method="POST" data-netlify="true" class="contact__form">
+                <div class="contact__input-container">
+                    <input name="contact-name" type="text" class="contact__input" placeholder="名稱" required>
+                    <input name="contact-email" type="email" class="contact__input" placeholder="Email" required>
+                    <textarea name="contact-feedback" class="contact__textarea" placeholder="意見反映" required></textarea>
+                </div>
+                <button class="button">送出</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="#top" class="up-arrow-wrapper">
+            <ion-icon name="ios-arrow-up" class="up-arrow"></ion-icon>
+        </a>
+    </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

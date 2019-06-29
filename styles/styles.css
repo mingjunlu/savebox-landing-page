@@ -6,3 +6,401 @@ body {
     font-size: 1.6rem;
     font-family: "Helvetica Neue", Helvetica, "PingFang TC", "STHeitiTC", "Microsoft JhengHei", Arial, sans-serif;
 }
+
+.up-arrow-wrapper {
+    position: fixed;
+    right: 1.2rem;
+    bottom: 1.2rem;
+    background-color: rgba(74, 129, 229, 0.6);
+    width: 46px;
+    height: 46px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.up-arrow {
+    color: white;
+    font-size: 3.2rem;
+}
+
+.section {
+    padding: 3.2rem 2.0rem;
+}
+
+/* 第一頁 */
+
+.front-page {
+    background-color: rgb(74, 129, 229);
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.front-page__headings {
+    margin-bottom: 3.2rem;
+}
+
+.logo {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 4.0;
+}
+
+.logo__icon {
+    display: none;
+    max-width: 2.2rem;
+    margin-right: 0.8rem;
+}
+
+.logo__text {
+    font-size: 2.4rem;
+    font-family: "Comfortaa";
+    text-transform: lowercase;
+}
+
+.slogans {
+    color: white;
+    text-align: center;
+}
+
+.slogans__slogan {
+    font-size: 2.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.slogans__subslogan {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 1.4rem 0;
+    border-radius: 5px;
+    background-color: rgb(64, 69, 99);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.input {
+    color: initial;
+    background-color: white;
+    padding: 1.4rem 0.8rem;
+    outline: none;
+    border: none;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 0 0 1px rgb(196, 205, 213);
+}
+
+.apple-icon {
+    font-size: 1.8rem;
+    margin-right: 0.2rem;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+
+.front-page__no-email-wrapper {
+    text-align: center;
+}
+
+.front-page__no-email {
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 2.0;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    text-decoration: underline;
+}
+
+.front-page__homescreen {
+    text-align: center;
+    height: 24rem;
+    overflow: hidden;
+}
+
+.homescreen__image {
+    width: 21.6rem;
+}
+
+/* 第二頁 */
+
+.pros__advantage {
+    padding: 1.6rem 3.2rem;
+    text-align: center;
+    margin-bottom: 2.0rem;
+    border-radius: 20px;
+}
+
+.advantage__icon {
+    font-size: 3.2rem;
+    margin-bottom: 2.0rem;
+    color: rgb(196, 207, 218);
+}
+
+.advantage__title {
+    font-size: 2.0rem;
+    line-height: 2.4;
+    color: rgb(20, 20, 20);
+}
+
+.advantage__content {
+    font-size: 1.8rem;
+    text-align: justify;
+    color: rgb(108, 108, 108);
+    line-height: 1.7;
+}
+
+.pros__advantage:hover {
+    box-shadow: 0px 20px 40px rgb(221, 231, 238);
+}
+
+.pros__advantage:hover > .advantage__icon,
+.pros__advantage:hover > .advantage__title {
+    color: rgb(28, 128, 223);
+}
+
+/* 第三頁 */
+
+.stats {
+    background-color: rgb(246, 246, 248);
+    padding-top: 12.0rem;
+    padding-bottom: 12.0rem;
+}
+
+.stats__image-wrapper {
+    text-align: center;
+    margin-bottom: 6.0rem;
+}
+
+.stats__image {
+    background-color: white;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 20px 40px rgb(206, 218, 228);
+}
+
+.stats__icon-wrapper {
+    display: none;
+}
+
+.stats__title {
+    font-size: 2.0rem;
+    line-height: 2.4;
+    color: rgb(20, 20, 20);
+    text-align: center;
+}
+
+.stats__content {
+    font-size: 1.8rem;
+    text-align: justify;
+    color: rgb(108, 108, 108);
+    line-height: 1.7;
+    padding-right: 3.2rem;
+    padding-left: 3.2rem;
+}
+
+/* 第四頁 */
+
+.qr-scanning {
+    color: white;
+    background-color: rgb(60, 155, 230);
+    background-color: rgb(74, 129, 229);
+    padding-top: 12.0rem;
+    padding-bottom: 12.0rem;
+}
+
+.qr-scanning__icon-wrapper {
+    display: none;
+}
+
+.qr-scanning__image-wrapper {
+    text-align: center;
+    margin-bottom: 6.0rem;
+}
+
+.qr-scanning__image {
+    width: 16.0rem;
+    padding: 0.8rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 20px 40px rgb(18, 118, 213);
+}
+
+.qr-scanning__title {
+    font-size: 2.0rem;
+    line-height: 2.4;
+    text-align: center;
+}
+
+.qr-scanning__content {
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 1.7;
+    padding-right: 3.2rem;
+    padding-left: 3.2rem;
+    color: rgb(237, 237, 237);
+}
+
+/* 第五頁 */
+
+.suggestion {
+    background-color: rgb(246, 246, 248);
+    padding-top: 12.0rem;
+    padding-bottom: 12.0rem;
+}
+
+.suggestion__image-wrapper {
+    text-align: center;
+    margin-bottom: 6.0rem;
+}
+
+.suggestion__image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 20px 40px rgb(206, 218, 228);
+}
+
+.suggestion__icon-wrapper {
+    display: none;
+}
+
+.suggestion__title {
+    font-size: 2.0rem;
+    line-height: 2.4;
+    color: rgb(20, 20, 20);
+    text-align: center;
+}
+
+.suggestion__content {
+    font-size: 1.8rem;
+    text-align: justify;
+    color: rgb(108, 108, 108);
+    line-height: 1.7;
+    padding-right: 3.2rem;
+    padding-left: 3.2rem;
+}
+
+/* 第六頁 */
+
+.feedback__heading {
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 3.6;
+    text-align: center;
+}
+
+.feedback__post {
+    padding: 1.6rem 3.2rem;
+    margin-bottom: 2.0rem;
+    border-radius: 20px;
+}
+
+.feedback__open-quote-wrapper {
+    line-height: 2.8;
+}
+
+.feedback__open-quote {
+    font-size: 1.8rem;
+    color: rgb(108, 108, 108);
+    position: relative;
+    left: -1.6rem;
+    transform: scale(-1, -1); /* 水平垂直翻轉 */
+}
+
+.feedback__content {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: rgb(20, 20, 20);
+    text-align: justify;
+}
+
+.feedback__end-quote-wrapper {
+    text-align: right;
+    line-height: 2.8;
+}
+
+.feedback__end-quote {
+    color: rgb(108, 108, 108);
+    font-size: 1.8rem;
+    position: relative;
+    right: -1.6rem;
+}
+
+.feedback__user {
+    text-align: right;
+    color: rgb(108, 108, 108);
+    line-height: 1.6;
+}
+
+.feedback__user::before {
+    content: '──';
+}
+
+.feedback__post:hover {
+    box-shadow: 0px 20px 40px rgb(221, 231, 238);
+}
+
+.feedback__post:hover > .feedback__content {
+    color: rgb(28, 128, 223);
+}
+
+/* 第七頁 */
+
+.contact {
+    color: white;
+    background-color: rgb(60, 155, 230);
+    background-color: rgb(74, 129, 229);
+    padding-top: 8.0rem;
+    padding-bottom: 12.0rem;
+}
+
+.contact__heading {
+    font-size: 2.4rem;
+    line-height: 3.6;
+    text-align: center;
+}
+
+.contact__input-container {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 4.0rem;
+    overflow: hidden;
+    box-shadow: 0px 20px 40px rgba(48, 55, 62, 0.25);
+}
+
+.contact__input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(226, 226, 237);
+    padding: 1.6rem;
+    border-radius: 0;
+}
+
+.contact__textarea {
+    display: block;
+    width: 100%;
+    height: 12.0rem;
+    border: 0;
+    padding: 1.6rem;
+}
+
+.contact__textarea::placeholder {
+    text-indent: -0.2rem;
+}

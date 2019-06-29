@@ -1,7 +1,7 @@
 /****** Elad Shechter's RESET Starts *******/
 
 *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 a {
@@ -49,7 +49,9 @@ cite {
 }
 
 fieldset {
-    border-width: 0; padding: 0; margin: 0;
+    border-width: 0;
+    padding: 0;
+    margin: 0;
 }
 
 /****** Elad Shechter's RESET Ends *******/
