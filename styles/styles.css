@@ -11,13 +11,21 @@ body {
     padding: 3.2rem 2.0rem;
 }
 
-/* 第一頁 */
+@media (min-width: 1200px) {
+    html {
+        font-size: 75%;
+    }
+}
 
+
+/* 第一頁 */
 .front-page {
     background-color: rgb(74, 129, 229);
     padding-top: 0;
     padding-bottom: 0;
-    min-height: 100vh;
+}
+
+.front-page__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -65,11 +73,12 @@ body {
 .front-page__input {
     display: block;
     width: 100%;
+    max-width: 30.0rem;
     padding: 1.4rem 0.8rem;
+    margin: 0 auto 1.2rem auto;
     text-align: center;
     border: 0;
     border-radius: 5px;
-    margin-bottom: 1.2rem;
     box-shadow: 0 0 0 1px rgb(196, 205, 213);
 }
 
@@ -78,7 +87,9 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-width: 30.0rem;
     padding: 1.4rem 0;
+    margin: 0 auto;
     border-radius: 5px;
     color: white;
     background-color: rgb(64, 69, 99);
@@ -109,15 +120,44 @@ body {
     overflow: hidden;
 }
 
-.homescreen__image {
+.front-page__image {
     width: 21.6rem;
 }
 
-/* 第二頁 */
+@media (min-width: 834px) {
+    .front-page {
+        padding: 0;
+    }
 
-.advantage {
+    .front-page__container {
+        min-height: 100vh;
+        max-width: 72.0rem;
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .front-page__form {
+        flex-grow: 1;
+    }
+
+    .front-page__image-wrapper {
+        height: auto;
+        margin-top: 4.0rem;
+    }
+
+    .front-page__image {
+        width: 34.0rem;
+    }
+}
+
+
+/* 第二頁 */
+.advantage__post {
     padding: 1.6rem 3.2rem;
     text-align: center;
+    max-width: 30.0rem;
+    margin: 0 auto;
     margin-bottom: 2.0rem;
     border-radius: 20px;
 }
@@ -141,21 +181,46 @@ body {
     line-height: 1.7;
 }
 
-.advantage:hover {
+.advantage__post:hover {
     box-shadow: 0px 20px 40px rgb(221, 231, 238);
 }
 
-.advantage:hover > .advantage__icon,
-.advantage:hover > .advantage__title {
+.advantage__post:hover > .advantage__icon,
+.advantage__post:hover > .advantage__title {
     color: rgb(28, 128, 223);
 }
 
-/* 第三頁 */
+@media (min-width: 834px) {
+    .advantage {
+        padding: 0;
+    }
 
+    .advantage__container {
+        max-width: 85.3rem;
+        margin: 0 auto;
+        padding: 8.0rem 2.0rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .advantage__post {
+        margin: 0;
+        padding: 3.2rem 3.2rem 3.6rem 3.2rem;
+        max-width: 25.0rem;
+    }
+}
+
+
+/* 第三頁 */
 .stats {
     background-color: rgb(246, 246, 248);
     padding-top: 12.0rem;
     padding-bottom: 12.0rem;
+}
+
+.stats__container {
+    max-width: 30.0rem;
+    margin: 0 auto;
 }
 
 .stats__image-wrapper {
@@ -173,7 +238,10 @@ body {
 }
 
 .stats__icon-wrapper {
+    color: rgb(28, 128, 223);
     display: none;
+    font-size: 3.2rem;
+    margin-bottom: 2.0rem;
 }
 
 .stats__title {
@@ -192,8 +260,54 @@ body {
     padding-left: 3.2rem;
 }
 
-/* 第四頁 */
+@media (min-width: 834px) {
+    .stats {
+        padding: 0;
+    }
 
+    .stats__container {
+        max-width: 75.0rem;
+        margin: 0 auto;
+        padding: 16.0rem 6.0rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .stats__image-wrapper {
+        margin: 0;
+    }
+
+    .stats__image {
+        width: 28.0rem;
+    }
+
+    .stats__icon-wrapper {
+        width: 6.4rem;
+        height: 6.4rem;
+        margin: 0 auto;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: 0px 20px 40px rgb(206, 218, 228);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stats__post {
+        max-width: 25.0rem;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .stats__content {
+        padding: 0;
+    }
+}
+
+
+/* 第四頁 */
 .qr-scanning {
     color: white;
     background-color: rgb(60, 155, 230);
@@ -202,8 +316,16 @@ body {
     padding-bottom: 12.0rem;
 }
 
+.qr-scanning__container {
+    max-width: 30.0rem;
+    margin: 0 auto;
+}
+
 .qr-scanning__icon-wrapper {
+    color: rgb(28, 128, 223);
     display: none;
+    font-size: 3.2rem;
+    margin-bottom: 2.0rem;
 }
 
 .qr-scanning__image-wrapper {
@@ -234,12 +356,58 @@ body {
     color: rgb(237, 237, 237);
 }
 
-/* 第五頁 */
+@media (min-width: 834px) {
+    .qr-scanning {
+        padding: 0;
+    }
 
+    .qr-scanning__container {
+        max-width: 75.0rem;
+        margin: 0 auto;
+        padding: 16.0rem 7.6rem 16.0rem 10.8rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .qr-scanning__image-wrapper {
+        margin: 0;
+    }
+
+    .qr-scanning__icon-wrapper {
+        width: 6.4rem;
+        height: 6.4rem;
+        margin: 0 auto 1.6rem auto;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 20px 40px rgb(18, 118, 213);
+    }
+
+    .qr-scanning__post {
+        max-width: 25.0rem;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .qr-scanning__content {
+        padding: 0;
+    }
+}
+
+
+/* 第五頁 */
 .suggestion {
     background-color: rgb(246, 246, 248);
     padding-top: 12.0rem;
     padding-bottom: 12.0rem;
+}
+
+.suggestion__container {
+    max-width: 30.0rem;
+    margin: 0 auto;
 }
 
 .suggestion__image-wrapper {
@@ -254,7 +422,10 @@ body {
 }
 
 .suggestion__icon-wrapper {
+    color: rgb(28, 128, 223);
     display: none;
+    font-size: 3.2rem;
+    margin-bottom: 2.0rem;
 }
 
 .suggestion__title {
@@ -273,8 +444,54 @@ body {
     padding-left: 3.2rem;
 }
 
-/* 第六頁 */
+@media (min-width: 834px) {
+    .suggestion {
+        padding: 0;
+    }
 
+    .suggestion__container {
+        max-width: 75.0rem;
+        margin: 0 auto;
+        padding: 16.0rem 6.0rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .suggestion__image-wrapper {
+        margin: 0;
+    }
+
+    .suggestion__image {
+        width: 28.0rem;
+    }
+
+    .suggestion__icon-wrapper {
+        width: 6.4rem;
+        height: 6.4rem;
+        margin: 0 auto;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: 0px 20px 40px rgb(206, 218, 228);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .suggestion__post {
+        max-width: 25.0rem;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .suggestion__content {
+        padding: 0;
+    }
+}
+
+
+/* 第六頁 */
 .feedback__heading {
     color: rgb(28, 128, 223);
     font-size: 2.0rem;
@@ -283,6 +500,8 @@ body {
 }
 
 .feedback__post {
+    max-width: 30.0rem;
+    margin: 0 auto;
     padding: 2.0rem 3.2rem 2.6rem 3.2rem;
     border-radius: 20px;
 }
@@ -336,8 +555,45 @@ body {
     color: rgb(28, 128, 223);
 }
 
-/* 第七頁 */
+@media (min-width: 834px) {
+    .feedback {
+        padding: 8.0rem 2.0rem;
+    }
 
+    .feedback__container {
+        max-width: 85.3rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .feedback__post {
+        margin: 0;
+        padding: 2.4rem 4.8rem 3.2rem 4.8rem;
+        max-width: unset;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .feedback__open-quote {
+        left: -2.4rem;
+    }
+
+    .feedback__content {
+        max-width: 15.0rem;
+    }
+
+    .feedback__end-quote {
+        right: -2.4rem;
+    }
+
+    .feedback__user {
+        margin-top: auto;
+    }
+}
+
+
+/* 第七頁 */
 .contact {
     color: white;
     background-color: rgb(60, 155, 230);
@@ -350,6 +606,11 @@ body {
     font-size: 2.4rem;
     line-height: 3.6;
     text-align: center;
+}
+
+.contact__form {
+    max-width: 30.0rem;
+    margin: 0 auto;
 }
 
 .contact__input-container {
@@ -391,6 +652,17 @@ body {
     background-color: rgb(64, 69, 99);
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
+
+@media (min-width: 834px) {
+    .contact__form {
+        max-width: 48.0rem;
+    }
+
+    .contact__textarea {
+        height: 24.0rem;
+    }
+}
+
 
 /* Footer */
 .up-arrow-wrapper {
