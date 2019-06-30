@@ -29,6 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 100vh;
 }
 
 .front-page__headings {
@@ -124,13 +125,18 @@ body {
     width: 21.6rem;
 }
 
+@media (max-width: 834px) and (min-height: 834px) {
+    .front-page__container {
+        min-height: unset;
+    }
+}
+
 @media (min-width: 834px) {
     .front-page {
         padding: 0;
     }
 
     .front-page__container {
-        min-height: 100vh;
         max-width: 72.0rem;
         margin: 0 auto;
         flex-direction: row;
