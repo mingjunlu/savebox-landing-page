@@ -13,7 +13,7 @@
 <body>
     <main>
         <section class="section front-page">
-            <div class="front-page__container">
+            <div class="front-page__container fade-in">
                 <form name="beta-testers" class="front-page__form" method="POST" data-netlify="true">
                     <div class="front-page__logo">
                         <img src="images/logo.svg" alt="logo" class="front-page__logo-icon">
@@ -36,24 +36,24 @@
                         <a href="https://testflight.apple.com/join/5CB6znKy" class="front-page__no-email">不想留 email？沒問題</a>
                     </div>
                 </form>
-                <figure class="front-page__image-wrapper">
+                <figure class="front-page__image-wrapper slide-in-bottom">
                     <img src="images/homescreen.png" alt="紀錄一覽" class="front-page__image">
                 </figure>
             </div>
         </section>
         <section class="section advantage">
             <div class="advantage__container">
-                <article class="advantage__post">
+                <article class="advantage__post to-be-faded-in">
                     <ion-icon name="ios-gift" class="advantage__icon"></ion-icon>
                     <h4 class="advantage__title">免費</h4>
                     <p class="advantage__content">要先花錢買 app 才能省錢？別鬧了！先省錢，再決定怎麼花錢。</p>
                 </article>
-                <article class="advantage__post">
+                <article class="advantage__post to-be-faded-in">
                     <ion-icon name="ios-checkmark-circle" class="advantage__icon"></ion-icon>
                     <h4 class="advantage__title">簡單易用</h4>
                     <p class="advantage__content">按按鈕、輸入金額，完成。懶得打字？電子發票掃起來！</p>
                 </article>
-                <article class="advantage__post">
+                <article class="advantage__post to-be-faded-in">
                     <ion-icon name="logo-apple" class="advantage__icon"></ion-icon>
                     <h4 class="advantage__title">為 iPhone 量身打造</h4>
                     <p class="advantage__content">遵從蘋果制定的《使用者介面規範》，操作上跟 iOS 內建的 app 一樣直覺。</p>
@@ -62,10 +62,10 @@
         </section>
         <section class="section stats">
             <article class="stats__container">
-                <figure class="stats__image-wrapper">
+                <figure data-direction="right" class="stats__image-wrapper to-be-faded-in to-be-slided-in">
                     <img src="images/stats.png" alt="統計頁面" class="stats__image">
                 </figure>
-                <div class="stats__post">
+                <div class="stats__post to-be-faded-in">
                     <div class="stats__icon-wrapper">
                         <ion-icon name="ios-stats" class="stats__icon"></ion-icon>
                     </div>
@@ -78,10 +78,10 @@
         </section>
         <section class="section qr-scanning">
             <article class="qr-scanning__container">
-                <figure class="qr-scanning__image-wrapper">
+                <figure data-direction="left" class="qr-scanning__image-wrapper to-be-faded-in to-be-slided-in">
                     <img src="images/qr-code.png" alt="電子發票" class="qr-scanning__image">
                 </figure>
-                <div class="qr-scanning__post">
+                <div class="qr-scanning__post to-be-faded-in">
                     <div class="qr-scanning__icon-wrapper">
                         <ion-icon name="ios-qr-scanner"></ion-icon>
                     </div>
@@ -92,10 +92,10 @@
         </section>
         <section class="section suggestion">
             <article class="suggestion__container">
-                <figure class="suggestion__image-wrapper">
+                <figure data-direction="right" class="suggestion__image-wrapper to-be-faded-in to-be-slided-in">
                     <img src="images/chat.png" alt="對話過程" class="suggestion__image">
                 </figure>
-                <div class="suggestion__post">
+                <div class="suggestion__post to-be-faded-in">
                     <div class="suggestion__icon-wrapper">
                         <ion-icon name="ios-chatbubbles" class="suggestion__icon"></ion-icon>
                     </div>
@@ -109,7 +109,7 @@
         <section class="section feedback">
             <h3 class="feedback__heading">聽聽他們怎麼說</h3>
             <div class="feedback__container">
-                <article class="feedback__post">
+                <article class="feedback__post to-be-faded-in">
                     <div class="feedback__open-quote-wrapper">
                         <ion-icon name="md-quote" class="feedback__open-quote"></ion-icon>
                     </div>
@@ -119,7 +119,7 @@
                     </div>
                     <p class="feedback__user">桃園陳先生</p>
                 </article>
-                <article class="feedback__post">
+                <article class="feedback__post to-be-faded-in">
                     <div class="feedback__open-quote-wrapper">
                         <ion-icon name="md-quote" class="feedback__open-quote"></ion-icon>
                     </div>
@@ -129,7 +129,7 @@
                     </div>
                     <p class="feedback__user">新北潘小姐</p>
                 </article>
-                <article class="feedback__post">
+                <article class="feedback__post to-be-faded-in">
                     <div class="feedback__open-quote-wrapper">
                         <ion-icon name="md-quote" class="feedback__open-quote"></ion-icon>
                     </div>
@@ -160,6 +160,7 @@
     </footer>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
     <script src="main.js"></script>
 </body>
 </html>

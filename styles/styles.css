@@ -17,6 +17,50 @@ body {
     }
 }
 
+/* 動畫 */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-in-bottom {
+    from { transform: translateY(50%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes slide-in-left {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slide-in-right {
+    from { transform: translateX(50%); }
+    to { transform: translateX(0); }
+}
+
+.to-be-faded-in {
+    opacity: 0;
+}
+
+.fade-in {
+    animation: 600ms fade-in;
+}
+
+.slide-in-bottom {
+    animation-name: fade-in, slide-in-bottom;
+    animation-duration: 300ms, 800ms;
+}
+
+.slide-in-left {
+    animation-name: fade-in, slide-in-left;
+    animation-duration: 300ms, 600ms;
+}
+
+.slide-in-right {
+    animation-name: fade-in, slide-in-right;
+    animation-duration: 300ms, 600ms;
+}
+
 
 /* 第一頁 */
 .front-page {
