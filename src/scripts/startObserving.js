@@ -4,17 +4,15 @@ const startObserving = () => {
     const onObserve = (entries, observer) => {
         entries.forEach((entry) => {
             if (entry.intersectionRatio > 0) {
-                // 處理 slide-in 效果
+                // .to-be-slided-in -> .slide-in-direction
                 const classes = entry.target.classList.toString().split(' ')
                 if (classes.includes('to-be-slided-in')) {
-                    const direction = entry.target.dataset.direction
-                    const tempArr = classes.concat([])
-                    const classIdx = tempArr.indexOf('to-be-slided-in')
-                    tempArr.splice(classIdx, 1, ('slide-in-' + direction))
-                    entry.target.className = tempArr.join(' ')
+                    const { direction } = entry.target.dataset
+                    entry.target.classList.add(`slide-in-${direction}`)
+                    entry.target.classList.remove('to-be-slided-in')
                 }
 
-                // 處理 fade-in 效果
+                // .to-be-faded-in -> .fade-in
                 entry.target.classList.add('fade-in')
                 entry.target.classList.remove('to-be-faded-in')
 
