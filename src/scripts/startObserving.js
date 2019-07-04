@@ -1,8 +1,8 @@
 // Lazy load animations
-function startObserving() {
+const startObserving = () => {
     const elementsToBeRevealed = document.querySelectorAll('[class*="to-be"]')
-    const onObserve = function(entries, observer) {
-        entries.forEach(function(entry) {
+    const onObserve = (entries, observer) => {
+        entries.forEach((entry) => {
             if (entry.intersectionRatio > 0) {
                 // 處理 slide-in 效果
                 const classes = entry.target.classList.toString().split(' ')
@@ -29,11 +29,7 @@ function startObserving() {
         threshold: 0.18,
     })
     observer.POLL_INTERVAL = 100
-    elementsToBeRevealed.forEach(function(element) { observer.observe(element) })
+    elementsToBeRevealed.forEach((element) => { observer.observe(element) })
 }
 
-// Enable smooth scrolling
-const scroll = new SmoothScroll('a[data-scroll]', { speed: 300 })
-
-// 頁面載入完成後再開始監控有動畫效果的元件，等畫面滑到才開始動畫
-window.addEventListener('load', function() { startObserving() }, { once: true })
+export default startObserving
