@@ -43,9 +43,3 @@ body {
     color: rgb(28, 128, 223);
     font-weight: 500;
 }
-
-.message__link--inline {
-    font-weight: normal;
-    color: inherit;
-    text-decoration: underline;
-}
