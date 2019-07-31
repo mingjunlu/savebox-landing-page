@@ -1,0 +1,51 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: white;
+    background-color: rgb(14, 30, 37);
+    font-size: 1.6rem;
+    font-family: "Helvetica Neue", Helvetica, "PingFang TC", "STHeitiTC", "Microsoft JhengHei", Arial, sans-serif;
+}
+
+.main {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    width: 85vw;
+    max-width: 412px;
+    padding: 2.0rem;
+    color: rgb(14, 30, 37);
+    background-color: white;
+    border-radius: 8px;
+}
+
+.message__title {
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+.message__content {
+    margin: 2.0rem 0;
+    text-align: justify;
+}
+
+.message__link {
+    color: rgb(28, 128, 223);
+    font-weight: 500;
+}
+
+.message__link--inline {
+    font-weight: normal;
+    color: inherit;
+    text-decoration: underline;
+}
