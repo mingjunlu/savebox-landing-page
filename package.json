@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "lint": "eslint src/scripts/*.js",
-    "dev": "parcel src/index.html src/success.html",
-    "build": "parcel build src/index.html src/success.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/*.html"
   },
   "repository": {
     "type": "git",
