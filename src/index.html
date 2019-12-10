@@ -169,7 +169,10 @@
         </section>
         <section class="section contact">
             <h3 class="contact__heading">聯繫開發者</h3>
-            <form name="contacts" method="POST" data-netlify="true" class="contact__form">
+            <form name="contacts" class="contact__form" method="POST" netlify-honeypot="contact-submitter" data-netlify="true">
+                <div class="contact__input-container contact__input-container--honeypot">
+                    <input name="contact-submitter" type="text" class="contact__input" placeholder="人員">
+                </div>
                 <div class="contact__input-container">
                     <input name="contact-name" type="text" class="contact__input" placeholder="名稱" required>
                     <input name="contact-email" type="email" class="contact__input" placeholder="Email" required>

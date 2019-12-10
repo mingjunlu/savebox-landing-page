@@ -671,6 +671,10 @@ body {
     box-shadow: 0px 20px 40px rgba(48, 55, 62, 0.25);
 }
 
+.contact__input-container--honeypot {
+    display: none;
+}
+
 .contact__input {
     display: block;
     width: 100%;
