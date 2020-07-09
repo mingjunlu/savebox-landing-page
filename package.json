@@ -4,9 +4,9 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "lint": "eslint src/scripts/*.js",
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/*.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/*.html",
+    "lint": "eslint src/scripts/*.js"
   },
   "repository": {
     "type": "git",
